@@ -20,7 +20,7 @@ class Stack
         }
     }
 
-    public function pop() //lấy ở cuối
+    public function pop() //lấy ở đầu
     {
 //        if ($this->isEmpty()) {
 //            echo "Stack is empty";
@@ -39,8 +39,10 @@ class Stack
     public function isEmpty()
     {
 //        return empty($this->stack);
+
         if (empty($this->stack)) {
             echo "Stack is empty";
+//        return count($this->stack) <= 0;
         }
     }
 }
