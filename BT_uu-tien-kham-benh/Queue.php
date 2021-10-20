@@ -5,6 +5,11 @@ class Queue
     private $font = null;
     private $back = null;
 
+    public function isEmpty()
+    {
+        return is_null($this->font);
+    }
+
     public function dequeue()
     {
 
@@ -12,6 +17,6 @@ class Queue
 
     public function toString()
     {
-        return $this->name . " " . $this->code;
+
     }
 }
